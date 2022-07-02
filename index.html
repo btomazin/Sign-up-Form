@@ -9,36 +9,57 @@
 </head>
 <body>
   <div class="side-container">
-    <img src="img/638.jpg" alt="background image of a beach">
+    <img src="img/jonne-huotari-unsplash.jpg" alt="background image of a beach">
     <div class="logo-container">
       <img src="img/odin-lined.png" alt="Company logo">
       <h1>Company</h1>
     </div>
   </div>
   <div class="main-container">
-    <p>This is not a real online service! You know you need something like this in your life to help you realze your deepest dreams. <br>Sign up now to get started.</p>
-    <p>You know you want to.</p>
+    <div class="top">
+      <p>This is not a real online service! You know you need something like this in your life to help you realze your deepest dreams. <br>Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
     <div class="form-container">
       <h2>Let's do this!</h2>
       <form action="#form" method="post">
-        <label for="fname">FIRST NAME</label>
-        <input type="text" name="fname" id="fname">
-        <label for="lname">LAST NAME</label>
-        <input type="text" name="lname" id="lname">
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email">
-        <label for="phone">PHONE NUMBER</label>
-        <input type="text" name="phone" id="phone">
-        <label for="pass">PASSWORD</label>
-        <input type="password" name="pass" id="pass">
-        <label for="con-pass">CONFIRM PASSWORD</label>
-        <input type="password" name="con-pass" id="con-pass">
+        <div class="form-line">
+          <div class="field">
+            <label for="fname">FIRST NAME</label>
+            <input type="text" name="fname" id="fname"></div>
+           <div class="field">
+            <label for="lname">LAST NAME</label>
+            <input type="text" name="lname" id="lname">
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="form-field">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="form-field">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="text" name="phone" id="phone">
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="form-field">
+            <label for="pass">PASSWORD</label>
+            <input type="password" name="pass" id="pass">
+          </div>
+          <div class="form-field">
+            <label for="con-pass">CONFIRM PASSWORD</label>
+            <input type="password" name="con-pass" id="con-pass">
+          </div>
+        </div>
       
     </div>
-    <button type="submit">Create Account</button>
-      </form>
-    <p class="login">Already have an account? <a href="http://">Log in</a>
-    </p>
+    <div class="bottom">
+      <button type="submit">Create Account</button>
+        </form>
+      <p class="login">Already have an account? <a href="http://">Log in</a>
+      </p>
+    </div>
 
   </div>
   <script src="script.js"></script>
