@@ -29,30 +29,34 @@
         <div class="form-line">
           <div class="field">
             <label for="fname">FIRST NAME</label>
-            <input type="text" name="fname" id="fname"></div>
+            <input type="text" name="fname" id="fname" required>
+          </div>
            <div class="field">
             <label for="lname">LAST NAME</label>
-            <input type="text" name="lname" id="lname">
+            <input type="text" name="lname" id="lname" required>
           </div>
         </div>
         <div class="form-line">
           <div class="form-field">
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" >
+            <span id="em-msg">*Please enter a valid email address</span>
           </div>
           <div class="form-field">
             <label for="phone">PHONE NUMBER</label>
-            <input type="text" name="phone" id="phone">
+            <input type="text" name="phone" id="phone" pattern="[0-9]+" >
+            <span id="ph-msg">*Please enter a valid phone number</span>
           </div>
         </div>
         <div class="form-line">
           <div class="form-field">
             <label for="pass">PASSWORD</label>
-            <input type="password" name="pass" id="pass">
+            <input type="password" name="pass" id="pass" required>
+            <span id="pw-msg">*Passwords do not match</span>
           </div>
           <div class="form-field">
             <label for="con-pass">CONFIRM PASSWORD</label>
-            <input type="password" name="con-pass" id="con-pass">
+            <input type="password" name="con-pass" id="con-pass" required>
           </div>
         </div>
       

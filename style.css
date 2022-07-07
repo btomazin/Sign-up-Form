@@ -10,7 +10,7 @@
   src: url(fonts/DMSerifDisplay-Regular.ttf);
 }
 
-.side-container> img{
+.side-container > img{
   width: var(--side-panel-width);
   height: 100vh;
   min-width: 350px;
@@ -34,12 +34,10 @@
 }
 
 .side-container .shoutout{
-  
   position: relative;
   bottom: 1.3rem;
   color: white;
   background-color: rgba(0, 0, 0,0.3);
-
 }
 
 .shoutout a{
@@ -47,8 +45,6 @@
   color: white;
   font-weight: bold;
 }
-
-
 
 .logo-container>h1{
   font-size: 4rem;
@@ -89,10 +85,8 @@ body{
   font-weight: bold;
 }
 
-
 .bottom{
   padding: var(--main-padding);
-
 }
 
 .bottom p {
@@ -125,7 +119,6 @@ body{
 .bottom button:active{
   background-color:#018995
 }
-
 
 .form-container>h2{
   padding: 0;
@@ -172,6 +165,25 @@ form > div > div{
   box-shadow: 2px 2px 3px #888888;
 }
 
-.form-container input:invalid{
+#phone:invalid + #ph-msg, #email:invalid + #em-msg{
+  display: block;
+}
+
+.form-field span{
+  color: var(--alt-color);
+  font-size: 0.8rem;
+  display: none;
+}
+
+input.req, input.bad-input{
+
+  /* border: var(--alt-color) 1px solid; */
+}
+
+ input:not(:focus):invalid {
   border: var(--alt-color) 1px solid;
+}
+
+input:not(:focus):valid {
+  border: #E5E7EB 2px solid;
 }
