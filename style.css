@@ -16,7 +16,7 @@
 
 .side-container > .img{
   width: var(--side-panel-width);
-  height: 100%;
+  height: 100vh;
   min-width: 350px;
   /* min-height: 800px; */
   background-image: url(img/jonne-huotari-unsplash.jpg);
