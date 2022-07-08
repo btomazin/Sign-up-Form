@@ -21,7 +21,7 @@ inputs.forEach(input => {
     input.addEventListener("blur", e => {
         if (input.value == ""){
             input.classList.add("req");
-            input.placeholder="Required";
+            // input.placeholder="Required";
         } else {
             input.classList.remove("req");
         }

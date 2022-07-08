@@ -10,12 +10,19 @@
   src: url(fonts/DMSerifDisplay-Regular.ttf);
 }
 
-.side-container > img{
+.side-container{
+  height: auto;
+}
+
+.side-container > .img{
   width: var(--side-panel-width);
-  height: 100vh;
+  height: 100%;
   min-width: 350px;
-  min-height: 800px;
+  /* min-height: 800px; */
+  background-image: url(img/jonne-huotari-unsplash.jpg);
   position: relative;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .side-container>.logo-container{
@@ -34,10 +41,10 @@
 }
 
 .side-container .shoutout{
-  position: relative;
-  bottom: 1.3rem;
+  position:100%;
+  top:100%;
   color: white;
-  background-color: rgba(0, 0, 0,0.3);
+  background-color: rgba(175, 94, 73, 0.5);
 }
 
 .shoutout a{
@@ -175,15 +182,8 @@ form > div > div{
   display: none;
 }
 
-input.req, input.bad-input{
+input.req, input.bad-input, input:invalid{
 
-  /* border: var(--alt-color) 1px solid; */
-}
-
- input:not(:focus):invalid {
   border: var(--alt-color) 1px solid;
 }
 
-input:not(:focus):valid {
-  border: #E5E7EB 2px solid;
-}
